@@ -1,4 +1,5 @@
-Paper Mario: The Thousand-Year Door (JP Release) [![Discord Badge]][discord]
+Paper Mario: The Thousand-Year Door
+[![Build Status]][actions] ![Progress] ![DOL Progress] ![RELs Progress] [![Discord Badge]][discord]
 =============
 
 <!--
@@ -86,31 +87,26 @@ Building
 - Clone the repository:
 
   ```sh
-  git clone https://github.com/NWPlayer123/G8MJ01-dtk
+  git clone https://github.com/NWPlayer123/G8MJ01-dtk.git
   ```
 
-- Using [Dolphin Emulator](https://dolphin-emu.org/), extract your game to `orig/G8MJ01`.
-![](assets/dolphin-extract.png)
-  - To save space, the only necessary files are the following. Any others can be deleted.
-    - `sys/main.dol`
-    - `files/rel/*.rel`
+- Copy your game's disc image to `orig/G8MJ01`.
+  - Supported formats: ISO (GCM), RVZ, WIA, WBFS, CISO, NFS, GCZ, TGC
+  - After the initial build, the disc image can be deleted to save space.
+
 - Configure:
 
   ```sh
   python configure.py
   ```
 
-  To use a version other than `G8MJ01` (JP), specify it with `--version`.
+  To use a version other than `G8MJ01` (USA), specify it with `--version`.
+
 - Build:
 
   ```sh
   ninja
   ```
-
-Visual Studio Code
-==================
-
-If desired, use the recommended Visual Studio Code settings by renaming the `.vscode.example` directory to `.vscode`.
 
 Diffing
 =======
