@@ -1,6 +1,8 @@
 #ifndef _DOLPHIN_CARDSTAT_H_
 #define _DOLPHIN_CARDSTAT_H_
 
+#pragma warn_padding off
+
 typedef struct CARDStat
 {
     /*0x00*/ char fileName[CARD_FILENAME_MAX];

@@ -1,6 +1,8 @@
 #ifndef _DOLPHIN_PAD_H_
 #define _DOLPHIN_PAD_H_
 
+#pragma warn_padding off
+
 #include <dolphin/types.h>
 
 #define PAD_SPEC_0 0

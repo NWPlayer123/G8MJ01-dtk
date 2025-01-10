@@ -6,6 +6,8 @@
 #include "memory.h"
 #include <string.h>
 
+#pragma warn_padding off
+
 extern GlobalWork* gp;
 
 //.data

@@ -1,6 +1,8 @@
 #ifndef _DOLPHIN_CARD_H_
 #define _DOLPHIN_CARD_H_
 
+#pragma warn_padding off
+
 #include <dolphin/os.h>
 #include <dolphin/dsp.h>
 #include <dolphin/dvd.h>
